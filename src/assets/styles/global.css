@@ -44,6 +44,7 @@ input,
 button,
 textarea {
   font: 500 1.6rem Poppins;
+  color: var(--color-text-base);
 }
 /*rem -> utilizado para criar aplicacoes responsivas, ele pega o tamanho normal
  e almenta por algo, nesse caso, aumenta em 1.6 (60%), sao adaptaveis ao tamanho da tela! */

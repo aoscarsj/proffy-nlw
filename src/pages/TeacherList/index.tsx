@@ -6,6 +6,7 @@ import backIcon from "../../assets/images/icons/back.svg";
 
 import "./styles.css";
 import PageHeader from "../../components/PageHeader";
+import TeacherItem from "../../components/TeacherItem";
 
 function TeacherList() {
   return (
@@ -13,9 +14,29 @@ function TeacherList() {
       <PageHeader title="Estes são os proffys disponíveis.">
         teste
         <form id="search-teachers">
-          <input></input>
+          <div className="input-block">
+            <label htmlFor="subject">Matéria</label>
+            <input type="text" id="subject" />
+          </div>
+
+          <div className="input-block">
+            <label htmlFor="week_day">Dia da semana</label>
+            <input type="text" id="week_day" />
+          </div>
+
+          <div className="input-block">
+            <label htmlFor="time">Hora</label>
+            <input type="text" id="time" />
+          </div>
         </form>
       </PageHeader>
+      <main>
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+      </main>
     </div>
   );
 }
